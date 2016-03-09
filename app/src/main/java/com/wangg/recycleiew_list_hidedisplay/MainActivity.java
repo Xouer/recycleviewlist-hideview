@@ -44,9 +44,10 @@ public class MainActivity extends AppCompatActivity {
         dividerLine.setSize(1);
         dividerLine.setColor(0xFFDDDDDD);
         timelistView.addItemDecoration(dividerLine);
-        timelistView.setItemAnimator(new DefaultItemAnimator());  //Goole默认动画效果
+//        timelistView.setItemAnimator(new DefaultItemAnimator());  //Goole默认动画效果
 
         timeListViewAdapter = new TimeListViewAdapter(array);
+        timelistView.setItemAnimator(new SlideInOutLeftItemAnimator(timelistView));
         timelistView.setAdapter(timeListViewAdapter);
 
         deleteFloatBtn.setOnClickListener(new View.OnClickListener() {
