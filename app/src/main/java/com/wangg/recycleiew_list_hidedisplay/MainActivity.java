@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+	//test 01
     public List<String> array;//数据
     private RecyclerView timelistView;
     private TimeListViewAdapter timeListViewAdapter;
